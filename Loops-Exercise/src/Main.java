@@ -3,13 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = Integer.parseInt(sc.nextLine());
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            System.out.println((2 * i) + 1);
-            sum += 2*i+1;
+        int age =Integer.parseInt(sc.nextLine());
+        if (age>=0 && age<=2){
+            System.out.println("baby");
+        } else if (age<=13) {
+            System.out.println("child");
+        } else if (age<=19) {
+            System.out.println("teenager");
+        }else if (age<=65){
+            System.out.println("adult");
+        } else  {
+            System.out.println("elder");
         }
-        System.out.printf("Sum: %d%n", sum);
 
 
     }
