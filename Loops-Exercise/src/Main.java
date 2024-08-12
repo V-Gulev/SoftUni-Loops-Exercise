@@ -1,20 +1,49 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n1 = Integer.parseInt(sc.nextLine());
-        int n2= Integer.parseInt(sc.nextLine());
-        int n3=n2+30;
-        if (n3>=60){
-            n1= n1+1;
-            n3=n3-60;
+        int number = Integer.parseInt(sc.nextLine());
+        switch (number) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Error!");
+                break;
         }
-        if (n1 == 24) {
-            n1=0;
-        }
-        if (n3<10){
-            System.out.printf("%d:0%d",n1,n3);
-        }else System.out.printf("%d:%d",n1,n3);
-
     }
 }
