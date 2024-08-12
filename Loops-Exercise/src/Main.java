@@ -3,12 +3,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = Integer.parseInt(sc.nextLine());
+        while (true) {
+            int number = sc.nextInt();
 
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(n + " X " + i + " = " + (n * i));
-
+            if (number % 2 == 0) {
+                System.out.println("The number is: " + Math.abs(number));
+                break;
+            } else {
+                System.out.println("Please write an even number.");
+            }
         }
+
 
     }
 }
