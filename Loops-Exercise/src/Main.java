@@ -6,6 +6,6 @@ public class Main {
         double grade = Double.parseDouble(scannerInput.nextLine());
         if (grade>=3.00){
             System.out.println("Passed!");
-        }
+        }else System.out.println("Failed!");
     }
 }
