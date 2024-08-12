@@ -3,19 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int age =Integer.parseInt(sc.nextLine());
-        if (age>=0 && age<=2){
-            System.out.println("baby");
-        } else if (age<=13) {
-            System.out.println("child");
-        } else if (age<=19) {
-            System.out.println("teenager");
-        }else if (age<=65){
-            System.out.println("adult");
-        } else  {
-            System.out.println("elder");
-        }
-
+        int number =Integer.parseInt(sc.nextLine());
+        if (number%10==0){
+            System.out.println("The number is divisible by 10");
+        } else if (number%7==0) {
+            System.out.println("The number is divisible by 7");
+        } else if (number%6==0) {
+            System.out.println("The number is divisible by 6");
+        } else if (number%3==0) {
+            System.out.println("The number is divisible by 3");
+        } else if (number%2==0) {
+            System.out.println("The number is divisible by 2");
+        }else System.out.println("Not divisible");
 
     }
 }
