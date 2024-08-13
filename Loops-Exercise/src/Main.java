@@ -1,17 +1,45 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scannerInput = new Scanner(System.in);
         int n1 = Integer.parseInt(scannerInput.nextLine());
-        int n2 = Integer.parseInt(scannerInput.nextLine());
-        int n3 = Integer.parseInt(scannerInput.nextLine());
-        int[] a = {n1, n2, n3};
-        int[] sortedArray = Arrays.stream(a).sorted().toArray();
+        int lastDigit = n1 % 10;
+        switch (lastDigit) {
+            case 0:
+                System.out.println("zero");
+                break;
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two");
+                break;
+            case 3:
+                System.out.println("three");
+                break;
+            case 4:
+                System.out.println("four");
+                break;
+            case 5:
+                System.out.println("five");
+                break;
+            case 6:
+                System.out.println("six");
+                break;
+            case 7:
+                System.out.println("seven");
+                break;
+            case 8:
+                System.out.println("eight");
+                break;
+            case 9:
+                System.out.println("nine");
+                break;
+            default:
+                System.out.println("unexpected case");
+                break;
 
-        for (int i = a.length - 1; i >= 0 ; i--) {
-            System.out.println(sortedArray[i]);
         }
     }
 }
