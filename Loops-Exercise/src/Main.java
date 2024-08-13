@@ -1,33 +1,17 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int lostGames = Integer.parseInt(sc.nextLine());
-        double headsetPrice = Double.parseDouble(sc.nextLine());
-        double mousePrice = Double.parseDouble(sc.nextLine());
-        double keyboardPrice = Double.parseDouble(sc.nextLine());
-        double displayPrice = Double.parseDouble(sc.nextLine());
-        double headsets = 0;
-        double mouses = 0;
-        double keyboards = 0;
-        double display = 0;
-        for (int i = 2; i <= lostGames; i += 2) {
-            headsets++;
-        }
-        for (int i = 3; i <= lostGames; i += 3) {
-            mouses++;
-        }
-        for (int i = 6; i <=lostGames ; i+=6) {
-            keyboards++;
-        }
-        for (int i = 12; i <=lostGames ; i+=12) {
-            display++;
-        }
-        double totalCost=display*displayPrice+headsetPrice*headsets+keyboardPrice*keyboards+mousePrice*mouses;
-        System.out.printf("Rage expenses: %.2f lv.",totalCost);
+        Scanner scannerInput = new Scanner(System.in);
+        int n1 = Integer.parseInt(scannerInput.nextLine());
+        int n2 = Integer.parseInt(scannerInput.nextLine());
+        int n3 = Integer.parseInt(scannerInput.nextLine());
+        int[] a = {n1, n2, n3};
+        int[] sortedArray = Arrays.stream(a).sorted().toArray();
 
+        for (int i = a.length - 1; i >= 0 ; i--) {
+            System.out.println(sortedArray[i]);
+        }
     }
 }
-
-
