@@ -1,1 +1,1 @@
-Loops Exercises
+SoftUni Loops Exercises
